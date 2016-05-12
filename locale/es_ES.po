@@ -1,0 +1,47 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:stock.lot,lag_quantity:"
+msgid "Lag Quantity"
+msgstr "Cantidad"
+
+msgctxt "field:stock.lot,warehouse:"
+msgid "Warehouse"
+msgstr "Almacén"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Expiry Date"
+msgstr "Fecha caducidad"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Lot Product Quantities"
+msgstr "Cantidad del lotes por producto"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Number"
+msgstr "Número"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Page"
+msgstr "Página"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Product"
+msgstr "Producto"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Quantity"
+msgstr "Importe"
+
+msgctxt "jasper:stock.lot.jreport:"
+msgid "Warehouse"
+msgstr "Almacén"
+
+msgctxt "model:ir.action,name:stock_lot_report_action"
+msgid "Stock Lot"
+msgstr "Lote stock"

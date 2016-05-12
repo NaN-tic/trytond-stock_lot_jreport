@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- This file is part of stock_lot_jreport module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<tryton>
+    <data>
+        <!-- stock.lot -->
+        <record model="ir.ui.view" id="lot_view_form">
+            <field name="model">stock.lot</field>
+            <field name="inherit" ref="stock_lot.lot_view_form"/>
+            <field name="name">lot_form</field>
+        </record>
+        <record model="ir.ui.view" id="lot_view_tree">
+            <field name="model">stock.lot</field>
+            <field name="inherit" ref="stock_lot.lot_view_tree"/>
+            <field name="name">lot_tree</field>
+        </record>
+
+        <!-- stock.lot.jreport -->
+        <record model="ir.action.report" id="stock_lot_report_action">
+            <field name="name">Stock Lot</field>
+            <field name="model">stock.lot</field>
+            <field name="report_name">stock.lot.jreport</field>
+            <field name="report">stock_lot_jreport/stock.jrxml</field>
+            <field name="extension">pdf</field>
+        </record>
+        <record model="ir.action.keyword" id="stock_lot_report_keyword">
+            <field name="keyword">form_print</field>
+            <field name="model">stock.lot,-1</field>
+            <field name="action" ref="stock_lot_report_action"/>
+        </record>
+    </data>
+</tryton>
