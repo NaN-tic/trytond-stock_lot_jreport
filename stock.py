@@ -25,11 +25,18 @@ class Lot:
     def get_lag_quantity(cls, lots, name):
         pool = Pool()
         Date = pool.get('ir.date')
+        Location = pool.get('stock.location')
+
         configuration = pool.get('stock.configuration')(1)
 
         products = list(set(l.product for l in lots))
         location_ids = (configuration.warehouse and
             [configuration.warehouse.id] or [])
+
+        if not location_ids:
+            warehouses = Location.search([('type', '=', 'warehouse')])
+            location_ids = [w.storage_location.id for w in warehouses]
+
         lag_days = configuration.lag_days or 0
         stock_date_end = Date.today() + relativedelta(days=int(lag_days))
         with Transaction().set_context({'stock_date_end': stock_date_end}):
@@ -42,9 +49,15 @@ class Lot:
         pool = Pool()
         Date = pool.get('ir.date')
         configuration = pool.get('stock.configuration')(1)
+        Location = pool.get('stock.location')
 
         location_ids = (configuration.warehouse and
             [configuration.warehouse.id] or [])
+
+        if not location_ids:
+            warehouses = Location.search([('type', '=', 'warehouse')])
+            location_ids = [w.storage_location.id for w in warehouses]
+
         lag_days = configuration.lag_days or 0
         stock_date_end = Date.today() + relativedelta(days=int(lag_days))
         with Transaction().set_context({'stock_date_end': stock_date_end}):
