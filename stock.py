@@ -5,9 +5,7 @@ from trytond.model import fields
 from trytond.modules.jasper_reports.jasper import JasperReport
 from trytond.pool import Pool, PoolMeta
 from trytond.transaction import Transaction
-
 from dateutil.relativedelta import relativedelta
-
 
 __all__ = ['Lot', 'LotReport']
 
@@ -29,7 +27,6 @@ class Lot:
 
         configuration = pool.get('stock.configuration')(1)
 
-        products = list(set(l.product for l in lots))
         location_ids = (configuration.warehouse and
             [configuration.warehouse.id] or [])
 
@@ -40,7 +37,7 @@ class Lot:
         lag_days = configuration.lag_days or 0
         stock_date_end = Date.today() + relativedelta(days=int(lag_days))
         with Transaction().set_context({'stock_date_end': stock_date_end}):
-            quantities = cls._get_quantity(lots, name, location_ids, products,
+            quantities = cls._get_quantity(lots, name, location_ids,
                 grouping=('product', 'lot'))
             return quantities
 

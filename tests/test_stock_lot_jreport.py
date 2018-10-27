@@ -36,9 +36,10 @@ class TestCase(ModuleTestCase):
             supplier, = Location.search([('code', '=', 'SUP')])
             customer, = Location.search([('code', '=', 'CUS')])
             storage, = Location.search([('code', '=', 'STO')])
+            warehouse, = Location.search([('code', '=', 'WH')])
 
             StockConfiguration.create([{
-                    'warehouse': storage.id,
+                    'warehouse': warehouse.id,
                     'lag_days': 1,
                     }])
 
