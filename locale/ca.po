@@ -10,35 +10,35 @@ msgctxt "field:stock.lot,warehouse:"
 msgid "Warehouse"
 msgstr "Magatzem"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Date"
 msgstr "Data"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Expiry Date"
 msgstr "Data caducitat"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Lot Product Quantities"
 msgstr "Quantitat del lots per producte"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Number"
 msgstr "Número"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Page"
 msgstr "Pàgina"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Product"
 msgstr "Producte"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Quantity"
 msgstr "Quantitat"
 
-msgctxt "jasper:stock.lot.jreport:"
+msgctxt "report:stock.lot.jreport:"
 msgid "Warehouse"
 msgstr "Magatzem"
 
