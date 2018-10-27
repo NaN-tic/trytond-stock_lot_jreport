@@ -10,8 +10,7 @@ from dateutil.relativedelta import relativedelta
 __all__ = ['Lot', 'LotReport']
 
 
-class Lot:
-    __metaclass__ = PoolMeta
+class Lot(metaclass=PoolMeta):
     __name__ = 'stock.lot'
 
     lag_quantity = fields.Function(fields.Float('Lag Quantity'),
