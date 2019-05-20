@@ -23,6 +23,7 @@ copyright notices and license terms. -->
             <field name="report_name">stock.lot.jreport</field>
             <field name="report">stock_lot_jreport/stock.jrxml</field>
             <field name="extension">pdf</field>
+            <field name="template_extension">jrxml</field>
         </record>
         <record model="ir.action.keyword" id="stock_lot_report_keyword">
             <field name="keyword">form_print</field>
