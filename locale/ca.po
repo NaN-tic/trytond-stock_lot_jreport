@@ -4,7 +4,7 @@ msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:stock.lot,lag_quantity:"
 msgid "Lag Quantity"
-msgstr "Quantitat"
+msgstr "Quantitat de retard"
 
 msgctxt "field:stock.lot,warehouse:"
 msgid "Warehouse"
