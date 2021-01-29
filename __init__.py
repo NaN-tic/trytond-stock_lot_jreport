@@ -6,8 +6,5 @@ from . import stock
 
 def register():
     Pool.register(
-        stock.Lot,
-        module='stock_lot_jreport', type_='model')
-    Pool.register(
         stock.LotReport,
         module='stock_lot_jreport', type_='report')

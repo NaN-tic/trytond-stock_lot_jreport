@@ -2,14 +2,6 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "field:stock.lot,lag_quantity:"
-msgid "Lag Quantity"
-msgstr "Quantitat de retard"
-
-msgctxt "field:stock.lot,warehouse:"
-msgid "Warehouse"
-msgstr "Magatzem"
-
 msgctxt "report:stock.lot.jreport:"
 msgid "Date"
 msgstr "Data"
@@ -41,7 +33,3 @@ msgstr "Quantitat"
 msgctxt "report:stock.lot.jreport:"
 msgid "Warehouse"
 msgstr "Magatzem"
-
-msgctxt "model:ir.action,name:stock_lot_report_action"
-msgid "Stock Lot"
-msgstr "Lot"
