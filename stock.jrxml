@@ -30,8 +30,8 @@
 	<field name="company-street" class="java.lang.String">
 		<fieldDescription><![CDATA[User/company/party-party/addresses-addresses/street-street]]></fieldDescription>
 	</field>
-	<field name="company-zip" class="java.lang.String">
-		<fieldDescription><![CDATA[User/company/party-party/addresses-addresses/zip-zip]]></fieldDescription>
+	<field name="company-postal_code" class="java.lang.String">
+		<fieldDescription><![CDATA[User/company/party-party/addresses-addresses/postal_code-postal_code]]></fieldDescription>
 	</field>
 	<field name="company-city" class="java.lang.String">
 		<fieldDescription><![CDATA[User/company/party-party/addresses-addresses/city-city]]></fieldDescription>
@@ -109,7 +109,7 @@
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{company-zip}+" "+$F{company-city}+" "+$F{company-country}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{company-postal_code}+" "+$F{company-city}+" "+$F{company-country}]]></textFieldExpression>
 			</textField>
 			<textField isStretchWithOverflow="true">
 				<reportElement x="0" y="65" width="511" height="10" isRemoveLineWhenBlank="true" forecolor="#808080" uuid="8fd90f0c-4a1d-43e8-a5a8-0027e7022e5c"/>
